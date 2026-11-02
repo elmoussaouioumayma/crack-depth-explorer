@@ -1,0 +1,6 @@
+results/*
+!results/validation.json
+crack_profiles.*
+__pycache__/
+.ipynb_checkpoints/
+.venv/

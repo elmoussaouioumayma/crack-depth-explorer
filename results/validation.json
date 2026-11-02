@@ -1,0 +1,93 @@
+{
+  "accuracy": {
+    "scenes": 20,
+    "centre_line_points": 41299,
+    "true_depth_range_mm": [
+      0.3,
+      4.02
+    ],
+    "photometric_stereo": {
+      "depth_mae_mm": 0.208,
+      "depth_median_abs_error_mm": 0.098,
+      "depth_bias_mm": -0.159,
+      "depth_relative_error_median_%": 12.8,
+      "depth_correlation": 0.929,
+      "width_mae_mm": 0.209,
+      "width_median_abs_error_mm": 0.143,
+      "detection_precision": 0.955,
+      "detection_recall": 0.966
+    },
+    "single_image_shading_best_case": {
+      "depth_mae_mm": 0.553,
+      "depth_median_abs_error_mm": 0.46,
+      "depth_correlation": 0.314,
+      "fitted_scale_mm_per_index": 1.52
+    }
+  },
+  "depth_error_by_depth_to_width_ratio": {
+    "0-0.4": {
+      "points": 10344,
+      "median_abs_error_mm": 0.048,
+      "bias_mm": 0.008
+    },
+    "0.4-0.6": {
+      "points": 14955,
+      "median_abs_error_mm": 0.08,
+      "bias_mm": -0.072
+    },
+    "0.6-0.8": {
+      "points": 11780,
+      "median_abs_error_mm": 0.165,
+      "bias_mm": -0.228
+    },
+    "0.8-1.2": {
+      "points": 4220,
+      "median_abs_error_mm": 0.618,
+      "bias_mm": -0.678
+    }
+  },
+  "robustness": {
+    "assumed_elevation_deg": {
+      "true 35, assumed 45": {
+        "depth_mae_mm": 0.248,
+        "depth_bias_mm": 0.142
+      },
+      "true 40, assumed 45": {
+        "depth_mae_mm": 0.159,
+        "depth_bias_mm": 0.03
+      },
+      "true 45, assumed 45": {
+        "depth_mae_mm": 0.157,
+        "depth_bias_mm": -0.088
+      },
+      "true 50, assumed 45": {
+        "depth_mae_mm": 0.241,
+        "depth_bias_mm": -0.202
+      },
+      "true 55, assumed 45": {
+        "depth_mae_mm": 0.334,
+        "depth_bias_mm": -0.31
+      }
+    },
+    "noise": {
+      "sigma 0.01": {
+        "depth_mae_mm": 0.157,
+        "depth_bias_mm": -0.088
+      },
+      "sigma 0.03": {
+        "depth_mae_mm": 0.167,
+        "depth_bias_mm": -0.104
+      },
+      "sigma 0.06": {
+        "depth_mae_mm": 0.188,
+        "depth_bias_mm": -0.132
+      }
+    },
+    "three_lights": {
+      "N, E, S": {
+        "depth_mae_mm": 0.186,
+        "depth_bias_mm": -0.124
+      }
+    }
+  }
+}

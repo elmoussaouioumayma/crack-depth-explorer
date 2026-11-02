@@ -1,0 +1,7 @@
+numpy>=1.24
+scipy>=1.10
+opencv-python>=4.8
+scikit-image>=0.21
+matplotlib>=3.7
+jupyter
+ipympl        # optional: interactive profile tool inside Jupyter (%matplotlib widget)
